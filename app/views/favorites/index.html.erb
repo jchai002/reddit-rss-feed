@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="columns small-12">
+
+    <h4>Favorites</h4>
+
+    <hr/><br/>
+
+    <%= react_component 'Favorites', { data: @favs } %>
+
+    <% if @favs.length == 0 %>
+      <p>
+        You have no favorites
+      </p>
+    <% end %>
+
+    <br/><br/>
+
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="columns small-12">
+
+    <h4>Reddit <em><%= @feed.query %></em></h4>
+
+    <hr/><br/>
+
+    <%= react_component 'Articles', { data: @articles } %>
+
+    <% if @articles.length == 0 %>
+      <p>
+        No posts for this query: <em><%= @feed.query %></em>.
+      </p>
+    <% end %>
+
+    <br/><br/>
+
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>
