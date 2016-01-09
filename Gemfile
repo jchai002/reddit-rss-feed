@@ -32,7 +32,8 @@ gem 'react-rails'
 
 gem 'nokogiri'
 
-gem 'momentjs-rails', '~> 2.9', :github => 'derekprior/momentjs-rails'
+gem 'momentjs-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
