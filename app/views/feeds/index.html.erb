@@ -2,10 +2,7 @@
 
 <div class="row">
   <div class="columns small-12">
-
-    <%=image_tag("https://www.redditstatic.com/reddit.com.header.png")%>
-    <br/>
-    <h2>Current Feeds</h2>
+    <h2>Reddit RSS Feeds</h2>
     <hr/>
     <%= react_component 'Feeds', { data: @feeds } %>
     <hr/>

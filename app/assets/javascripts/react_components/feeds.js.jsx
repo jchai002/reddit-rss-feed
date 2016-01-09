@@ -4,7 +4,7 @@ var Feeds = React.createClass({
       return <Feed {...feeds} />
     });
 
-    return <ul className="small-block-grid-3" key={this.props.id}>
+    return <ul className="small-block-grid-1 medium-block-grid-2 large-block-grid-3" key={this.props.id}>
         {feeds}
       </ul>
   },

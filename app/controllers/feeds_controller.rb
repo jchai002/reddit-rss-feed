@@ -43,6 +43,15 @@ class FeedsController < ApplicationController
     end
   end
 
+  def destroy
+    @feed=Feed.find_by({id: params[:id]})
+    if @feed.destroy
+      render :json => {message:"Feed deleted!"}
+    else
+      render :json => {message: "Something went wrong, blame it on the cats!"}
+    end
+  end
+
   private
     def feed_params
       params[:feed].permit(:query)

@@ -11,7 +11,7 @@ var Favorite = React.createClass({
         <br/>
         <span className="date">{this.props.data.date}</span>
         <hr/>
-        <button onClick={this.handleDeleteClick} className="button tiny round alert">Delete</button>
+        <button onClick={this.handleDeleteClick} className="button tiny round alert"><i className="fi-x"></i> Delete</button>
         <br/>
       </div>
     } else {

@@ -1,0 +1,15 @@
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+
+    <li class="logo">
+      <%=image_tag("reddit-icon.png")%>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+  </ul>
+  <% flash[:error] %>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li><%= link_to "Feeds", feeds_path %></li>
+      <li><%= link_to "Favorites", favorites_path %></li>
+  </section>
+</nav>

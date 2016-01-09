@@ -2,6 +2,7 @@ var Article = React.createClass({
   getInitialState: function(){
     return {
       message:'',
+      error:'',
       favorited:false
     }
   },
@@ -13,12 +14,16 @@ var Article = React.createClass({
       <hr/>
       <button  onClick={this.handleFavoriteClick} className="button tiny round"><i className="fi-heart"></i> Favorite</button>
       <br/>
-      <span>{this.state.message}</span>
+      <span style={{color:'green'}}>{this.state.message}</span>
+      <span style={{color:'red'}}>{this.state.error}</span>
     </div>
   },
   handleFavoriteClick: function(){
     if (this.state.favorited){
-        this.setState({message:"You can't favorite something twice, too much of a good thing is bad!"})
+        this.setState({
+          message:'',
+          error:"Yo Dawg, you just favorited this!"
+        })
     } else {
       var data = {
         favorite: this.props
@@ -36,14 +41,6 @@ var Article = React.createClass({
         console.error( status, err.toString());
       }.bind(this)
     });
-
     }
-    },
-    componentDidUpdate: function(){
-      console.log(this.state)
-      this.render()
-    },
-    componentDidMount: function(){
-      console.log(this.state)
-    }
+  }
 })
