@@ -72,12 +72,19 @@
         1,
         null
       ],
+      "/Users/jerrychai/Documents/rails projects/RSS-Reader/app/models/favorite.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/jerrychai/Documents/rails projects/RSS-Reader/app/models/feed.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1452330642
+    "timestamp": 1452335639
   }
 }
