@@ -44,10 +44,8 @@ gem 'momentjs-rails', '~> 2.9', :github => 'derekprior/momentjs-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
   gem 'pry'
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'faker'
 end
