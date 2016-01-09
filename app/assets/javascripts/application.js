@@ -15,6 +15,7 @@
 //= require foundation
 //= require react
 //= require react_ujs
+//= require moment
 //= require_tree .
 
 $(function(){ $(document).foundation(); });

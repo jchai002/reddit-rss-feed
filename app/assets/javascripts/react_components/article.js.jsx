@@ -10,7 +10,7 @@ var Article = React.createClass({
     return <div key={this.props.id} className="post-wrapper">
       <a href={this.props.link}>{this.props.title}</a>
       <br/>
-      <span className="date">{this.props.date}</span>
+      <span className="radius secondary label">{moment(this.props.date).fromNow()}</span>
       <hr/>
       <button  onClick={this.handleFavoriteClick} className="button tiny round"><i className="fi-heart"></i> Favorite</button>
       <br/>
