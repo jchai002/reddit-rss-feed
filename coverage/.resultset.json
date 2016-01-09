@@ -1,10 +1,74 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jerrychai/Documents/rails projects/RSS-Reader/app/models/favorite.rb": [
+      "/Users/jerrychai/Documents/rails projects/RSS-Reader/app/controllers/feeds_controller.rb": [
         1,
         1,
         1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        3,
+        3,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        3,
+        null,
+        null
+      ],
+      "/Users/jerrychai/Documents/rails projects/RSS-Reader/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
         1,
         null
       ],
@@ -14,6 +78,6 @@
         null
       ]
     },
-    "timestamp": 1452319133
+    "timestamp": 1452324557
   }
 }
