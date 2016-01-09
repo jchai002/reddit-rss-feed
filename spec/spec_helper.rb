@@ -32,23 +32,24 @@ RSpec.configure do |config|
   end
 
   config.before(:suite) do
-     DatabaseCleaner.strategy = :transaction
-     DatabaseCleaner.clean_with(:truncation)
-     DatabaseCleaner.start
-     DatabaseCleaner.clean
-   end
+    DatabaseCleaner.clean_with(:truncation)
+  end
 
-   config.before(:each) do
-     DatabaseCleaner.clean
-   end
+  config.before(:each) do
+    DatabaseCleaner.strategy = :transaction
+  end
 
-   config.after(:each) do
-     DatabaseCleaner.clean
-   end
+  config.before(:each, :js => true) do
+    DatabaseCleaner.strategy = :truncation
+  end
 
-   config.after(:suite) do
-     DatabaseCleaner.clean
-   end
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+
+  config.after(:each) do
+    DatabaseCleaner.clean
+  end
 
   # rspec-mocks config goes here. You can use an alternate test double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
