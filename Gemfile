@@ -63,6 +63,6 @@ group :test do
 	gem 'simplecov', :require => false
 	gem 'launchy'
 	gem 'capybara'
-	gem 'database_cleaner'
+  gem 'database_cleaner'
 	gem 'shoulda-matchers'
 end

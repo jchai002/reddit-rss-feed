@@ -14,18 +14,18 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-08T23:29:17-08:00">2016-01-08T23:29:17-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-01-09T00:46:03-08:00">2016-01-09T00:46:03-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">51.35%</span></span>
+    (<span class="covered_percent"><span class="red">59.46%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.64
+         0.91
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>3</b> files in total.
     <b>37</b> relevant lines. 
-    <span class="green"><b>19</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <span class="green"><b>22</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#b0431e48a597373b49e0b61033548bb18e2fc2a1" class="src_link" title="app/controllers/feeds_controller.rb">app/controllers/feeds_controller.rb</a></td>
-        <td class="red strong">45.45 %</td>
+        <td class="red strong">54.55 %</td>
         <td>62</td>
         <td>33</td>
-        <td>15</td>
         <td>18</td>
-        <td>0.6</td>
+        <td>15</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -89,11 +89,11 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">48.57%</span></span>
+    (<span class="covered_percent"><span class="red">57.14%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.62
+         0.91
        </span>
     </span> hits/line)
   </h2>
@@ -101,8 +101,8 @@
   <div>
     <b>2</b> files in total.
     <b>35</b> relevant lines. 
-    <span class="green"><b>17</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <span class="green"><b>20</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -130,12 +130,12 @@
       
       <tr>
         <td class="strong"><a href="#b0431e48a597373b49e0b61033548bb18e2fc2a1" class="src_link" title="app/controllers/feeds_controller.rb">app/controllers/feeds_controller.rb</a></td>
-        <td class="red strong">45.45 %</td>
+        <td class="red strong">54.55 %</td>
         <td>62</td>
         <td>33</td>
-        <td>15</td>
         <td>18</td>
-        <td>0.6</td>
+        <td>15</td>
+        <td>0.9</td>
       </tr>
       
     </tbody>
@@ -362,11 +362,11 @@
         <div class="source_table" id="b0431e48a597373b49e0b61033548bb18e2fc2a1">
   <div class="header">
     <h3>app/controllers/feeds_controller.rb</h3>
-    <h4><span class="red">45.45 %</span> covered</h4>
+    <h4><span class="red">54.55 %</span> covered</h4>
     <div>
       <b>33</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>18</b> lines missed.</span>
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -460,7 +460,7 @@
         <li class="covered" data-hits="3" data-linenumber="15">
           <span class="hits">3</span>
           
-          <code class="ruby">    redirect_to @feed</code>
+          <code class="ruby">    redirect_to feeds_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -505,22 +505,22 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
-          
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
           
           <code class="ruby">    @feed = Feed.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
-          
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
           
           <code class="ruby">    @feed.update(feed_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">    redirect_to root_path</code>
+          <code class="ruby">    redirect_to feeds_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
@@ -727,8 +727,8 @@
           <code class="ruby">    def feed_params</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="60">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="60">
+          <span class="hits">5</span>
           
           <code class="ruby">      params[:feed].permit(:query)</code>
         </li>

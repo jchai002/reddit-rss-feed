@@ -12,7 +12,7 @@ class FeedsController < ApplicationController
 
   def create
     @feed = Feed.create(feed_params)
-    redirect_to @feed
+    redirect_to feeds_path
   end
 
   def edit
@@ -22,7 +22,7 @@ class FeedsController < ApplicationController
   def update
     @feed = Feed.find(params[:id])
     @feed.update(feed_params)
-    redirect_to root_path
+    redirect_to feeds_path
   end
 
   def show
