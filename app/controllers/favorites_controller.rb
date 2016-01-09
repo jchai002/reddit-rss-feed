@@ -5,7 +5,7 @@ class FavoritesController < ApplicationController
     if @fav.save
       render :json => {message:"Yo dawg, this puppy is saved!"}
     else
-      render :json => {message:"Something went wrong, blame it on the cats!"}
+      render :json => {error:"Something went wrong, blame it on the cats!"}
     end
   end
 
@@ -18,7 +18,7 @@ class FavoritesController < ApplicationController
     if @fav.destroy
       render :json => {message:"Article deleted!"}
     else
-      render :json => {message:"Article deletion error!"}
+      render :json => {error:"Article deletion error!"}
     end
   end
 
