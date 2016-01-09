@@ -1,7 +1,7 @@
 This is a Reddit RSS Feed Reader built with rails and ReactJS. The XML data is fetched from reddit and parsed into ruby objects via the nokogiri gem. The frontend components are mostly built with ReactJS.
 
-* Ruby version
+* Ruby version -
   2.2.1p85
   
-* Database creation
+* Database -
   postgresql
