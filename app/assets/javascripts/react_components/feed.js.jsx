@@ -10,7 +10,7 @@ var Feed = React.createClass({
         <div className="card">
           <div className="content">
             <a href={'/feeds/' + this.props.id}>
-              <span className="title">{this.props.query}</span>
+              <span className="title"><i className="fi-link"></i> {this.props.query}</span>
             </a>
             <br/>
           </div>
