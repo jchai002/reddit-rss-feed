@@ -48,11 +48,10 @@ RSpec.describe FeedsController, type: :controller do
 
     it 'does not update feed with invalid params' do
       @feed = create_feed
-      old_attrs = @feed.attributes
-      new_attrs = invalid_feed_attrs
-      put :update, id: @feed.id, feed: new_attrs
+      old_query = @feed.query
+      put :update, id: @feed.id, feed: invalid_feed_attrs
       @feed.reload
-      expect(@feed.attributes).to eq(old_attrs)
+      expect(@feed.query).to eq(old_query)
     end
 
     it 'redirects to feeds index after update' do
