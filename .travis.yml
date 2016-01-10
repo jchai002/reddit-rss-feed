@@ -5,3 +5,5 @@ before_install:
   - gem update --system
   - gem --version
   - gem install momentjs-rails -v '2.11.0'
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
