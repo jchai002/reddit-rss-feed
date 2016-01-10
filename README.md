@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/jchai002/reddit-rss-feed.svg?branch=master)](https://travis-ci.org/jchai002/reddit-rss-feed)
 [![Code Climate](https://codeclimate.com/github/jchai002/reddit-rss-feed/badges/gpa.svg)](https://codeclimate.com/github/jchai002/reddit-rss-feed)
+[![Test Coverage](https://codeclimate.com/github/jchai002/reddit-rss-feed/badges/coverage.svg)](https://codeclimate.com/github/jchai002/reddit-rss-feed/coverage)
 
 #Reddit RSS Feed Reader
 
