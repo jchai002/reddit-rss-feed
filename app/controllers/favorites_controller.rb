@@ -10,7 +10,7 @@ class FavoritesController < ApplicationController
   end
 
   def index
-    @favs=Favorite.all
+    @favs=Favorite.order(:created_at)
   end
 
   def destroy
