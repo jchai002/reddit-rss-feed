@@ -16,9 +16,9 @@ class FavoritesController < ApplicationController
   def destroy
     @fav=Favorite.find_by({id: params[:id]})
     if @fav.destroy
-      render :json => {message:"Article deleted!"}
+      render :json => {message:"Yo Dawg, this article is deleted!"}
     else
-      render :json => {error:"Article deletion error!"}
+      render :json => {error:"Something went wrong, blame it on the cats!"}
     end
   end
 

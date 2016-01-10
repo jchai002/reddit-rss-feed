@@ -21,17 +21,6 @@ var Favorite = React.createClass({
   },
   handleDeleteClick: function(){
         var url='/favorites/'+this.props.data.id
-        $.ajax({
-        url: url,
-        type: 'DELETE',
-        success: function(result) {
-          this.setState({
-            deleted:true
-          })
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.error( status, err.toString());
-        }.bind(this)
-      })
+        ajaxDelete(url, this);
     }
 })

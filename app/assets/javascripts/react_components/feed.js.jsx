@@ -38,18 +38,7 @@ var Feed = React.createClass({
 
   },
   handleDeleteClick: function(){
-        var url='/feeds/'+this.props.id
-        $.ajax({
-        url: url,
-        type: 'DELETE',
-        success: function(result) {
-          this.setState({
-            deleted:true
-          })
-        }.bind(this),
-        error: function(xhr, status, err) {
-          console.error( status, err.toString());
-        }.bind(this)
-      })
+        var url='/feeds/'+this.props.id;
+        ajaxDelete(url, this);
     }
 })
