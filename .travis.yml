@@ -11,3 +11,6 @@ script:
   - bundle exec rake db:create RAILS_ENV=test
   - bundle exec rake db:schema:load RAILS_ENV=test
   - bundle exec rspec spec
+addons:
+    code_climate:
+        repo_token: 9a9d6e263cc90175563ad3af59cf8475faf464f4c804e42c832b358c0847d9f4
