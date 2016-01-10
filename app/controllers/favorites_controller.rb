@@ -5,7 +5,7 @@ class FavoritesController < ApplicationController
     if @fav.save
       render :json => {message:"Yo dawg, this puppy is saved!"}
     else
-      render :json => {error:"Something went wrong, blame it on the cats!"}
+      render :json => {error:"Sorry, you can't favorite this again, blame it on the cats!"}
     end
   end
 

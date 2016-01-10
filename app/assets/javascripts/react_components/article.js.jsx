@@ -22,7 +22,7 @@ var Article = React.createClass({
     if (this.state.favorited){
         this.setState({
           message:'',
-          error:"Yo Dawg, you just favorited this!"
+          error:"Sorry, you can't favorite this again, blame it on the cats!"
         })
     } else {
       var data = {
