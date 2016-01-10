@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jchai002/reddit-rss-feed.svg?branch=master)](https://travis-ci.org/jchai002/reddit-rss-feed)
+[![Build Status](https://travis-ci.org/jchai002/reddit-rss-feed.svg?branch=master)](https://travis-ci.org/jchai002/reddit-rss-feed)]
 ==Reddit RSS Feed Reader 
 
 
